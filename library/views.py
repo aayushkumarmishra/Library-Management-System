@@ -29,6 +29,13 @@ def view_books(request):
     books = Book.objects.all()
     return render(request, "view_books.html", {'books':books})
 
+
+@login_required(login_url = '/student_login')
+def student_view_book(request):
+    books = Book.objects.all()
+    return render(request, "student_view_book.html", {'books':books})
+
+
 @login_required(login_url = '/admin_login')
 def view_students(request):
     students = Student.objects.all()

@@ -32,6 +32,10 @@
               </li>
               &nbsp;&nbsp;&nbsp;
               <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/student_view_book/">View All Books</a>
+              </li>
+              &nbsp;&nbsp;&nbsp;
+              <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/student_issued_books/">View Issued Books</a>
               </li>
               &nbsp;&nbsp;&nbsp;
@@ -59,19 +63,6 @@
     <script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js"></script>
 
     {% block js %}
-    <script>
-      $(document).ready(function () {
-        $('#example').DataTable({
-          dom: 'Bfrtip',
-          buttons: [
-            'copyHtml5',
-            'excelHtml5',
-            'csvHtml5',
-            'pdfHtml5'
-          ]
-        });
-      });
-    </script>
     {% endblock %}
   </body>
 </html>
